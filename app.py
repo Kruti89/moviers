@@ -3,6 +3,7 @@ import pickle
 import pandas as pd
 import requests
 
+
 def fetch_poster(movie_id):
     response=requests.get('https://api.themoviedb.org/3/movie/{}?api_key=cc8eed963e483b8c8c4bc303d5fe67b2&language=en-US'.format(movie_id))
     data=response.json()
